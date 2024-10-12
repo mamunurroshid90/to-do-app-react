@@ -62,13 +62,15 @@ const Home = () => {
             <input
               type="text"
               placeholder="Title"
+              required
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               className=" py-2 px-3 shadow appearance-none border text-gray-700 focus:outline-none rounded w-full leading-tight"
             />
             <textarea
               value={description}
-              maxLength={40}
+              required
+              maxLength={80}
               rows={4}
               placeholder="Description"
               onChange={(e) => setDescription(e.target.value)}
